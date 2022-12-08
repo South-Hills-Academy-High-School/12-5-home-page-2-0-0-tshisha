@@ -20,6 +20,9 @@ const server = http.createServer((req, res) => {
     else if (url==='/dinosaur4.html') {
     fs.createReadStream('dinosaur4.html').pipe(res)
     }
+    else if (url==='/dinosaur5.html') {
+    fs.createReadStream('dinosaur5.html').pipe(res)
+      }  
     else if (url==='/dinosaureatyou.html') {
     fs.createReadStream('dinosaureatyou.html').pipe(res)
     }
